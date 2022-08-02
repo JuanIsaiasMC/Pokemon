@@ -1,0 +1,857 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Neue', cursive;
+}
+
+
+button {
+    cursor: pointer;
+}
+
+
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* login */
+
+.container {
+    padding: 1rem;
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+}
+
+.pokemon-background {
+    width: 100%;
+    height: 60vh;
+    object-fit: contain;
+}
+
+.container-form {
+    text-align: center;
+}
+
+.h1-form {
+    font-size: 400;
+    color: rgb(255, 255, 255);
+}
+
+.input-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.input-form {
+    border-radius: .5rem;
+    border: yellow solid 4px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    cursor: pointer;
+    text-align: center;
+    color: black;
+    padding: 5px;
+}
+
+.input-form::placeholder {
+    text-align: center;
+    color: black;
+
+}
+
+.button-form {
+    height: 2.5rem;
+    background-color: inherit;
+    border: none;
+    margin-left: .5rem;
+}
+
+
+/* pokedex */
+
+.pokedex-container {
+    padding: 1rem;
+    text-align: center;
+    background-color: red;
+}
+
+.pokedex-image {
+    width: 100%;
+    display: block;
+}
+
+.title-image {
+    width: 100%;
+}
+
+.pokedex-title {
+    color: white;
+    margin: 1rem 0;
+}
+
+.pokedex-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.pokedex-form {
+    width: calc(60% - 8%);
+    background-color: white;
+    border: yellow solid 3px;
+    border-radius: .5rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    cursor: pointer;
+    text-align: center;
+    color: black;
+    padding: 5px;
+}
+
+.pokedex-form::placeholder {
+    color: black;
+
+}
+
+.pokedex-button {
+    background-color: inherit;
+    border: none;
+    width: 8%;
+    margin-left: .5rem;
+}
+
+.pokedex-button-img {
+    width: 100%;
+}
+
+.pokedex-select {
+    background-color: rgb(64, 82, 217);
+    width: 60%;
+    border: solid 3px black;
+    border-radius: .5rem;
+    color: rgb(255, 224, 49);
+    text-align: center;
+    margin-top: .5rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    padding: 5px;
+}
+
+
+
+.button-container {
+    margin: 1rem 0;
+}
+
+.button-page {
+    cursor: pointer;
+    background-color: rgb(255, 224, 49);
+    color: rgb(64, 82, 217);
+    padding: .5rem;
+    margin: .5rem .5rem;
+    border: black 1px solid;
+    border-radius: .5rem;
+    font-size: 1rem;
+}
+
+/* pokemon item */
+
+.pokemonItem-container {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: .5rem;
+}
+
+.pokemon-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+    overflow-y: hidden;
+}
+
+.pokemon-image {
+    width: 50%;
+}
+
+
+.pokemon-info {
+    padding-top: .5rem;
+    width: 100%;
+    border-radius: .5rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.pokemon-stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+
+.span-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.span-info {
+    text-align: center;
+    display: inline-block;
+    margin: 0 .5rem;
+    padding: 4px;
+
+}
+
+.steel-type {
+    background-color: lightgray;
+    border: silver solid 5px;
+}
+
+.bgr-steel {
+    background-color: lightgray;
+    border-radius: .5rem;
+}
+
+.normal-type {
+    background-color: lavender;
+    border: gainsboro solid 5px;
+}
+
+.bgr-normal {
+    background-color: lavender;
+    border-radius: .5rem;
+}
+
+.fighting-type {
+    background-color: firebrick;
+    border: darkred solid 5px;
+}
+
+.bgr-fighting {
+    background-color: firebrick;
+    border-radius: .5rem;
+}
+
+.poison-type {
+    background-color: mediumpurple;
+    border: blueviolet solid 5px;
+}
+
+.bgr-poison {
+    background-color: mediumpurple;
+    border-radius: .5rem;
+}
+
+.ground-type {
+    background-color: burlywood;
+    border: tan solid 5px;
+}
+
+.bgr-ground {
+    background-color: burlywood;
+    border-radius: .5rem;
+}
+
+.rock-type {
+    background-color: peru;
+    border: chocolate solid 5px;
+}
+
+.bgr-rock {
+    background-color: peru;
+    border-radius: .5rem;
+}
+
+.bug-type {
+    background-color: yellowgreen;
+    border: olivedrab solid 5px;
+}
+
+.bgr-bug {
+    background-color: yellowgreen;
+    border-radius: .5rem;
+}
+
+.ghost-type {
+    background-color: purple;
+    border: gold solid 5px;
+}
+
+.bgr-ghost {
+    background-color: purple;
+    border-radius: .5rem;
+}
+
+.fire-type {
+    background-color: crimson;
+    border: firebrick solid 5px;
+}
+
+.bgr-fire {
+    background-color: crimson;
+    border-radius: .5rem;
+}
+
+.water-type {
+    background-color: royalblue;
+    border: mediumslateblue solid 5px;
+}
+
+.bgr-water {
+    background-color: royalblue;
+    border-radius: .5rem;
+}
+
+.grass-type {
+    background-color: lime;
+    border: limegreen solid 5px;
+}
+
+.bgr-grass {
+    background-color: lime;
+    border-radius: .5rem;
+}
+
+.electric-type {
+    background-color: yellow;
+    border: gold solid 5px;
+}
+
+.bgr-electric {
+    background-color: yellow;
+    border-radius: .5rem;
+}
+
+.psychic-type {
+    background-color: violet;
+    border: plum solid 5px;
+}
+
+.bgr-psychic {
+    background-color: violet;
+    border-radius: .5rem;
+}
+
+.ice-type {
+    background-color: aquamarine;
+    border: paleturquoise solid 5px;
+}
+
+.bgr-ice {
+    background-color: aquamarine;
+    border-radius: .5rem;
+}
+
+.dragon-type {
+    background-color: mediumslateblue;
+    border: slateblue solid 5px;
+}
+
+.bgr-dragon {
+    background-color: mediumslateblue;
+    border-radius: .5rem;
+}
+
+.dark-type {
+    background-color: slategray;
+    border: darkslategray solid 5px;
+}
+
+.bgr-dark {
+    background-color: slategray;
+    border-radius: .5rem;
+}
+
+.fairy-type {
+    background-color: rgb(255, 136, 238);
+    border: rgb(255, 187, 238) solid 5px;
+}
+
+.bgr-fairy {
+    background-color: rgb(255, 136, 238);
+    border-radius: .5rem;
+}
+
+.flying-type {
+    background-color: rgb(152, 168, 240);
+    border: rgb(152, 187, 240) solid 5px;
+}
+
+.bgr-flying {
+    background-color: rgb(152, 168, 240);
+    border-radius: .5rem;
+}
+
+
+
+
+/* pokedetail */
+
+.pokeDetail-container {
+    background-color: red;
+    padding: 2rem;
+}
+
+.pokeDetail-image-background {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pokeDetail-background {
+    width: 60%;
+    object-fit: contain;
+}
+
+.button-back {
+    align-self: flex-end;
+    font-size: 2rem;
+    background-color: inherit;
+    border: none;
+    color: rgb(0, 70, 144);
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.pokeDetail-info-container {
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.pokeDetail-h2 {
+    margin-top: 1rem;
+}
+
+.pokeDetail-info {
+    text-align: center;
+    background-color: white;
+    border-top: rgb(0, 70, 144) solid 2px;
+}
+
+.pokeDetail-img-container {
+    width: 100%;
+    text-align: center
+}
+
+.pokeDetail-img {
+    width: 60%;
+
+}
+
+.first-info {
+    width: 100%;
+    padding: 2rem 1rem 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.second-info {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.type-container,
+.abilities-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.move-container {
+    padding: 1rem;
+    text-align: center;
+}
+
+
+.move {
+    margin-top: 1rem;
+    width: 100%;
+    height: 200px;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.move-p {
+    margin: .5rem;
+}
+
+
+
+@media screen and (min-width: 600px) {
+
+    /* height de 60 o 50 vh para la imagen*/
+
+    .container {
+        padding: 1rem;
+        width: 100%;
+        height: 100vh;
+        background-color: red;
+    }
+
+    .pokemon-background {
+        width: 100%;
+        height: 60vh;
+        object-fit: contain;
+    }
+
+    .container-form {
+        text-align: center;
+    }
+
+
+    .h1-form {
+        font-size: 400;
+        color: rgb(255, 255, 255);
+    }
+
+    .input-container {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .input-form {
+        border-radius: .5rem;
+        border: yellow solid 4px;
+        font-size: 1.5rem;
+        font-weight: 400;
+        cursor: pointer;
+        text-align: center;
+        color: black;
+        padding: 5px;
+    }
+
+    .input-form::placeholder {
+        text-align: center;
+        color: black;
+
+    }
+
+    .button-form {
+        height: 2.5rem;
+        background-color: inherit;
+        border: none;
+        margin-left: .5rem;
+    }
+
+
+    /* pokedex */
+
+    .pokedex-container {
+        padding: 2rem 5rem;
+        text-align: center;
+        background-color: red;
+    }
+
+    .pokedex-image {
+        width: 100%;
+        display: block;
+    }
+
+    .title-image {
+        width: 50%;
+    }
+
+    .pokedex-title {
+        color: white;
+        margin: 1rem 0;
+    }
+
+    .forms-container {
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+
+    .pokedex-form-container {
+        width: 40%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .pokedex-form {
+        width: 100%;
+        background-color: white;
+        border: yellow solid 3px;
+        border-radius: .5rem;
+        font-size: 1.4rem;
+        font-weight: 400;
+        cursor: pointer;
+        text-align: center;
+        color: black;
+        padding: 5px;
+    }
+
+    .pokedex-form::placeholder {
+        color: black;
+
+    }
+
+    .pokedex-button {
+        background-color: inherit;
+        border: none;
+        width: 10%;
+        margin-left: .5rem;
+    }
+
+    .pokedex-button-img {
+        width: 100%;
+    }
+
+    .pokedex-select {
+        background-color: rgb(64, 82, 217);
+        width: 40%;
+        border: solid 3px black;
+        border-radius: .5rem;
+        color: rgb(255, 224, 49);
+        text-align: center;
+        margin-top: inherit;
+        font-size: 1.4rem;
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    .button-container {
+        margin: 1rem 0;
+    }
+
+    .button-page {
+        cursor: pointer;
+        background-color: rgb(255, 224, 49);
+        color: rgb(64, 82, 217);
+        padding: .5rem;
+        margin: .5rem .5rem;
+        border: black 1px solid;
+        border-radius: .5rem;
+        font-size: 1.5rem;
+    }
+
+
+    /* pokedetail */
+
+    .pokeDetail-container {
+        background-color: red;
+        padding: 2rem 4rem;
+    }
+
+    .pokeDetail-image-background {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pokeDetail-background {
+        width: 50%;
+        object-fit: contain;
+    }
+
+
+    .button-back {
+        align-self: flex-end;
+        font-size: 3rem;
+        background-color: inherit;
+        border: none;
+        color: rgb(0, 70, 144);
+        margin: 1rem;
+        cursor: pointer;
+    }
+
+    .pokeDetail-info-container {
+        border-radius: 1rem;
+        overflow: hidden;
+    }
+
+    .pokeDetail-info {
+        background-color: white;
+        border-top: rgb(0, 70, 144) solid 2px;
+    }
+
+    .pokeDetail-img-container {
+        width: 100%;
+        text-align: center
+    }
+
+    .pokeDetail-img {
+        width: 60%;
+
+    }
+
+    .first-info {
+        width: 100%;
+        padding: 2rem 1rem 1rem;
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .second-info {
+        padding: 1rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .type-container,
+    .abilities-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem 0;
+    }
+
+    .move-container {
+        padding: 1rem;
+        text-align: center;
+    }
+
+
+    .move {
+        margin-top: 1rem;
+        width: 100%;
+        height: 200px;
+        overflow: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .move-p {
+        margin: .5rem;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    .pokeDetail-container {
+        padding: 2rem 4rem;
+    }
+
+    .pokeDetail-image-background {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pokeDetail-background {
+        width: 50%;
+        object-fit: contain;
+    }
+
+
+    .button-back {
+        align-self: flex-end;
+        font-size: 4rem;
+        background-color: inherit;
+        border: none;
+        color: rgb(0, 70, 144);
+        margin: 1rem;
+        cursor: pointer;
+    }
+
+    .pokeDetail-info-container {
+        border-radius: 1rem;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .pokeDetail-img-container {
+        width: 100%;
+        text-align: center;
+        margin: auto 0;
+    }
+
+    .pokeDetail-img {
+        width: 60%;
+
+    }
+
+    .pokeDetail-info {
+        margin-top: 0px;
+        width: 70%;
+        background-color: white;
+        border-top: inherit;
+    }
+
+
+
+
+    .first-info {
+        width: 100%;
+        padding: 2rem 1rem 1rem;
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .second-info {
+        padding: 1rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .type-container,
+    .abilities-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem 0;
+    }
+
+    .move-container {
+        padding: 1rem;
+        text-align: center;
+    }
+
+
+    .move {
+        margin-top: 1rem;
+        width: 100%;
+        height: 300px;
+        overflow: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .move-p {
+        margin: .5rem;
+    }
+}
