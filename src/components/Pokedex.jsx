@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import PokemonItem from './PokemonItem';
 import pokeball from '../assets/img/pokebola.png'
-import pokedex from '../assets/img/pokedex.png'
+import pokedex from '../assets/img/Pokedex.png'
 
 const Pokedex = () => {
     // de la siguiente manera se pondria dentro del componente en una variable y debe de ir l nombre del slice que esta en el index de la carpeta store
