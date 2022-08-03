@@ -211,7 +211,7 @@ li {
 .span-info {
     text-align: center;
     display: inline-block;
-    margin: 0 .5rem;
+    margin: .5rem .5rem;
     padding: 4px;
 
 }
