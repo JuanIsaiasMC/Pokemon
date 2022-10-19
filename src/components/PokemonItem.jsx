@@ -15,6 +15,11 @@ const PokemonItem = ({ pokemonUrl }) => {
             .then(res => setPokemon(res.data))
     }, [])
 
+    const goToPokemonDetail = () => {
+        navigate(`/pokedex/${pokemon.id}`)
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+
 
     const type = pokemon.types?.[0]?.type.name
 
@@ -25,7 +30,7 @@ const PokemonItem = ({ pokemonUrl }) => {
 
         <li
             className={`pokemon-info-container  ${colorBackground(type)}`}
-            onClick={() => navigate(`/pokedex/${pokemon.id}`)}>
+            onClick={goToPokemonDetail}>
             <img className='pokemon-image'
 
                 src={pokemon.sprites?.other['official-artwork'].front_default !== null ? pokemon.sprites?.other.home.front_default : pokemon.sprites?.other.dream_world.front_default}
